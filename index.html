@@ -1,37 +1,52 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dr A. E. Jaspan</title>
-    <meta name="description" content="Data Scientist specializing in ML, Bayesian statistics, and LLMs" />
-    <meta name="author" content="Dr A. E. Jaspan" />
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="/profile.jpeg" />
+        <link rel="apple-touch-icon" href="/profile.jpeg" />
+        <link rel="shortcut icon" href="/profile.jpeg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dr A. E. Jaspan</title>
+        <meta
+            name="description"
+            content="Data Scientist specializing in ML, Bayesian statistics, and LLMs"
+        />
+        <meta name="author" content="Dr A. E. Jaspan" />
 
-    <meta property="og:title" content="Dr A. E. Jaspan" />
-    <meta property="og:description" content="Data Scientist specializing in ML, Bayesian statistics, and LLMs" />
-    <meta property="og:type" content="website" />
+        <meta property="og:title" content="Dr A. E. Jaspan" />
+        <meta
+            property="og:description"
+            content="Data Scientist specializing in ML, Bayesian statistics, and LLMs"
+        />
+        <meta property="og:type" content="website" />
 
-    <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary_large_image" />
 
-    <!-- GitHub Pages SPA redirect handler -->
-    <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // https://github.com/rafgraph/spa-github-pages
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) {
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
-    </script>
-  </head>
+        <!-- GitHub Pages SPA redirect handler -->
+        <script type="text/javascript">
+            // Single Page Apps for GitHub Pages
+            // https://github.com/rafgraph/spa-github-pages
+            (function (l) {
+                if (l.search[1] === "/") {
+                    var decoded = l.search
+                        .slice(1)
+                        .split("&")
+                        .map(function (s) {
+                            return s.replace(/~and~/g, "&");
+                        })
+                        .join("?");
+                    window.history.replaceState(
+                        null,
+                        null,
+                        l.pathname.slice(0, -1) + decoded + l.hash,
+                    );
+                }
+            })(window.location);
+        </script>
+    </head>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.tsx"></script>
+    </body>
 </html>
