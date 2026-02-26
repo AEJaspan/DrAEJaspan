@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+@layer base {
+  :root {
+    --background: 60 9% 98%;
+    --foreground: 20 14% 8%;
+
+    --card: 60 9% 98%;
+    --card-foreground: 20 14% 8%;
+
+    --popover: 60 9% 98%;
+    --popover-foreground: 20 14% 8%;
+
+    --primary: 20 14% 8%;
+    --primary-foreground: 60 9% 98%;
+
+    --secondary: 40 10% 94%;
+    --secondary-foreground: 20 14% 8%;
+
+    --muted: 40 10% 94%;
+    --muted-foreground: 20 6% 44%;
+
+    --accent: 24 100% 50%;
+    --accent-foreground: 60 9% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 60 9% 98%;
+
+    --border: 40 10% 88%;
+    --input: 40 10% 88%;
+    --ring: 24 100% 50%;
+
+    --radius: 0.5rem;
+
+    /* Custom tokens */
+    --font-display: 'Inter', system-ui, sans-serif;
+    --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 20 14% 6%;
+    --foreground: 60 9% 96%;
+
+    --card: 20 14% 8%;
+    --card-foreground: 60 9% 96%;
+
+    --popover: 20 14% 8%;
+    --popover-foreground: 60 9% 96%;
+
+    --primary: 60 9% 96%;
+    --primary-foreground: 20 14% 6%;
+
+    --secondary: 20 10% 14%;
+    --secondary-foreground: 60 9% 96%;
+
+    --muted: 20 10% 14%;
+    --muted-foreground: 40 6% 60%;
+
+    --accent: 24 100% 55%;
+    --accent-foreground: 20 14% 6%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 60 9% 96%;
+
+    --border: 20 10% 18%;
+    --input: 20 10% 18%;
+    --ring: 24 100% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-display);
+  }
+
+  ::selection {
+    @apply bg-accent/20 text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s var(--transition-smooth) forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s var(--transition-smooth) forwards;
+  }
+
+  .animate-stagger {
+    animation: slideUp 0.6s var(--transition-smooth) forwards;
+    animation-fill-mode: both;
+  }
+
+  .animate-stagger-1 { animation-delay: 0.1s; }
+  .animate-stagger-2 { animation-delay: 0.2s; }
+  .animate-stagger-3 { animation-delay: 0.3s; }
+  .animate-stagger-4 { animation-delay: 0.4s; }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
