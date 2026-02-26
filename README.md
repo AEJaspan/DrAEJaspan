@@ -2,7 +2,7 @@
 
 A personal portfolio and blog site built with React, TypeScript, Vite, and Tailwind CSS. Automatically deploys to GitHub Pages via GitHub Actions.
 
-**Live Site:** https://aejaspan.github.io/clean-slate/
+**Live Site:** https://aejaspan.github.io/DrAEJaspan/
 
 ---
 
@@ -55,8 +55,8 @@ git --version     # Should output 2.x.x or higher
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/AEJaspan/clean-slate.git
-cd clean-slate
+git clone https://github.com/AEJaspan/DrAEJaspan.git
+cd DrAEJaspan
 
 # 2. Install dependencies
 npm install
@@ -73,7 +73,7 @@ npm run dev
 ## Project Structure
 
 ```
-clean-slate/
+DrAEJaspan/
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml          # GitHub Actions workflow for auto-deployment
@@ -270,10 +270,10 @@ The site automatically deploys via GitHub Actions when you push to `main`:
 
 #### Base Path Configuration
 
-The site is configured to deploy to a subdirectory (`/clean-slate/`). This is handled in `vite.config.ts`:
+The site is configured to deploy to a subdirectory (`/DrAEJaspan/`). This is handled in `vite.config.ts`:
 
 ```typescript
-base: process.env.GITHUB_ACTIONS ? "/clean-slate/" : "/",
+base: process.env.GITHUB_ACTIONS ? "/DrAEJaspan/" : "/",
 ```
 
 React Router is also configured with the correct basename in `src/App.tsx`:
@@ -405,7 +405,7 @@ https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=cro
 
 ```typescript
 export default defineConfig(({ mode }) => ({
-  base: process.env.GITHUB_ACTIONS ? "/clean-slate/" : "/",
+  base: process.env.GITHUB_ACTIONS ? "/DrAEJaspan/" : "/",
   server: {
     host: "::",
     port: 8080,
@@ -490,7 +490,7 @@ This is expected on GitHub Pages. The `404.html` redirect handles this automatic
 
 ### Getting Help
 
-- **Issues**: [GitHub Issues](https://github.com/AEJaspan/clean-slate/issues)
+- **Issues**: [GitHub Issues](https://github.com/AEJaspan/DrAEJaspan/issues)
 - **Vite docs**: [vitejs.dev](https://vitejs.dev/)
 - **React docs**: [react.dev](https://react.dev/)
 - **Tailwind docs**: [tailwindcss.com](https://tailwindcss.com/)
