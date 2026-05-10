@@ -4,7 +4,7 @@ const Hero = () => {
       <div className="max-w-2xl mx-auto">
         <div className="flex items-start gap-6 mb-6">
           <img
-            src={import.meta.env.BASE_URL + "C848C707-CDD3-4879-94DF-9E87142D8E48.jpeg"}
+            src={import.meta.env.BASE_URL + "profile.jpeg"}
             alt="Dr A. E. Jaspan"
             className="w-24 h-24 rounded-full object-cover animate-stagger animate-stagger-1"
           />

@@ -112,7 +112,7 @@ The key finding is that confidence representation format significantly impacts b
 These findings indicate that prompted confidence scores from LLMs, regardless of representation format, remain unsuitable for high-stakes applications requiring reliable uncertainty quantification.
     `,
         thumbnail:
-            "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop",
+            "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop",
         tags: ["LLM", "Machine Learning", "Classification", "AI"],
     },
     {
@@ -200,7 +200,7 @@ Cooperation significantly improves with provider alignment, mixed-size pairings,
 **Code:** https://github.com/AEJaspan/negotiation_blog
     `,
         thumbnail:
-            "https://images.unsplash.com/photo-1573164713988-8665fc963095?w=800&h=400&fit=crop",
+            "https://images.pexels.com/photos/1040157/pexels-photo-1040157.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&fit=crop",
         tags: ["AI", "Multi-Agent Systems", "Game Theory", "Research"],
     },
     {
@@ -219,7 +219,7 @@ Last week, PwC UK hosted the GenAI Connect day. This event brought together over
 It was great to have the opportunity to deliver a session at this event, in which I gave a technical introduction to building generative AI applications using LangChain. It was a good opportunity to get into the pros and cons of LangChain, and to show technologists at PwC what is possible with this incredible new technology.
     `,
         thumbnail:
-            "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&h=400&fit=crop",
+            "https://images.pexels.com/photos/3321793/pexels-photo-3321793.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&fit=crop",
         tags: ["LangChain", "GenAI", "Python", "PwC"],
     },
     {
@@ -252,7 +252,7 @@ I have attached a demonstration of the tool that I built, presented by one of my
 For more details, see the blog post: https://www.linkedin.com/pulse/testing-genai-three-brief-case-studies-demonstrating-so-chapman-u3bne/
     `,
         thumbnail:
-            "https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=800&h=400&fit=crop",
+            "https://images.pexels.com/photos/8112197/pexels-photo-8112197.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&fit=crop",
         tags: ["LLM", "RAG", "AI", "Content Validation"],
     },
     {
